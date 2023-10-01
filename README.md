@@ -15,7 +15,7 @@
 
 ![](https://react-leaflet.js.org/img/logo-title.svg)
 
-En nuestro caso utilizamos react-leaflet, ya que es una librerpia existente para react, donde provee a React con componentes para Leaflet. 
+En nuestro caso utilizamos react-leaflet, ya que es una librería  existente para react, donde provee a React con componentes para Leaflet. 
 
 ####Intalación 
 
