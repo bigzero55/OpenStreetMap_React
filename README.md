@@ -70,3 +70,5 @@ Es una herrmaienta que nos da la posibilidad de buscar datos de OpenStreetMap po
 
 [Nominatim](https://nominatim.org/) :fa-globe:
 
+[Wiki de Openstreetmap](https://wiki.openstreetmap.org/) :fa-globe:
+
