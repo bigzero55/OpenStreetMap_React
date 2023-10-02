@@ -1,5 +1,19 @@
 # OpenStreetMap
 
+##### ¿Qué es?
+
+Es un proyecto internacional para crear un mapa gratuito del mundo. Se puede definir como:
+
+- Un mapa web gratuito.
+- Un mapa libre del mundo, creado por una comunidad.
+- Colección de herramientas de código abierto pra mapear el mundo.
+
+Es un mapa editable y libre del mundo entero que está siendo elaborado por voluntarios y publicado con una licencia de contenido abierto.
+
+### Documentación de OSM
+
+[OpenStreetMap](https://wiki.openstreetmap.org/)
+
 ##### Recursos utlizados
 
 - Libreria React Leaflet
