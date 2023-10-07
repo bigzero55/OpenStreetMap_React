@@ -11,6 +11,7 @@ const MapNavigation = () => {
         { position: [19.0966071, -98.2441535], name: 'Fuente de los Frailes' },
         { position: [19.05108, -98.17518], name: 'Fuerte de Loreto' },
     ];
+    
 
   return (
     <div className=".map-container">
@@ -18,7 +19,7 @@ const MapNavigation = () => {
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      />
+        />
         {markers.map((marker, index) => (
           <Marker key={index} position={marker.position}>
             <Popup>
