@@ -1,3 +1,5 @@
+
+
 # OpenStreetMap
 
 ##### ¿Qué es?
@@ -79,6 +81,73 @@ Despues de la instalación agregamos el siguiente código que nos muestra un fun
 
 Es una herrmaienta que nos da la posibilidad de buscar datos de OpenStreetMap por nombre y dirección (geocodificación).
 
+# Trazado de rutas
+
+Para el trazado de rutas hicimos uso de una librería de Leaflet en particular.
+
+## Leaflet Routing Machine
+
+![](https://user-images.githubusercontent.com/7645519/47955002-1a24bf00-dfc4-11e8-9ce5-1435d69137a2.png)
+
+Es una extensión para Leaflet, una librería de código abierto para mapas interactivos en JavaScript. Esta extensión agrega funcionalidad de enrutamiento y direcciones a tus mapas Leaflet, permitiéndote calcular y mostrar rutas entre diferentes ubicaciones en el mapa. Leaflet Routing Machine se utiliza comúnmente para crear aplicaciones web de mapas que incluyen funcionalidades de navegación y enrutamiento.
+
+Nos ofrece algunas de las siguientes caracteristicas: 
+
+- Enrutamiento de inicio a destino, con posibilidad de puntos vía.
+- Agregar, Editar y eliminar puntos de referencia mediante la entrada de direcciones y el uso del mapa.
+- Soporte de múltiples idioma
+- Alta personalización
+
+## Instalación
+
+ Agregamos lo siguiente 
+
+```
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+```
+
+Tambien se puede instalar utilizando npm, unicamente agregado: 
+
+`
+npm install --save leaflet-routing-machine
+`
+Y por ultimo importantando dentro de tu proyecto: 
+
+```
+import 'leaflet-routing-machine';  // Importa la extensión de Leaflet para enrutamiento.
+import 'leaflet-routing-machine/dist/leaflet-routing-machine.css'; // Importa los estilos CSS para la extensión de enrutamiento.
+```
+## Leaflet-control-geocoder
+
+Es una extensión para Leaflet, una librería de mapas interactivos en JavaScript, que proporciona una forma fácil de agregar controles de búsqueda y geocodificación a tus mapas Leaflet. Esta extensión es útil cuando deseas permitir a los usuarios buscar ubicaciones, introducir direcciones o nombres de lugares, y convertirlos en coordenadas geográficas en tu aplicación.
+
+
+![](https://www.drupal.org/files/issues/2019-09-11/address_search_input_and_geocode_control.jpg)
+
+## Instalación 
+
+Para realizar la instalación con npm:
+
+```
+npm install leaflet-control-geocoder
+
+```
+Despues realizamos las importacion extras a tu proyecto. 
+
+```
+import 'leaflet-control-geocoder/dist/Control.Geocoder.css'; // Importa los estilos CSS del geocodificador.
+import 'leaflet-control-geocoder/dist/Control.Geocoder.js'; // Importa la librería Leaflet-Geocoder.
+```
+
+# Muestra del trazado
+
+Al agregar correctamente lo anteriormente mostrado el trazado de la ruta debe tener un parecido a lo siguiente: 
+
+![](https://i.stack.imgur.com/iec9g.jpg)
+
 # Referencias
 [React-leaflet](https://react-leaflet.js.org/) :fa-leaf:
 
@@ -86,3 +155,4 @@ Es una herrmaienta que nos da la posibilidad de buscar datos de OpenStreetMap po
 
 [Wiki de Openstreetmap](https://wiki.openstreetmap.org/) :fa-globe:
 
+[Leaflet Routing Machine](https://www.liedman.net/leaflet-routing-machine/#about)
