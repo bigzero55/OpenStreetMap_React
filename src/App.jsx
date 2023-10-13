@@ -1,12 +1,18 @@
-// import MapNavigation from "./components/MapNavigation"
+import MapNavigation from "./components/MapNavigation"
+import Header from "./components/Header";
+import {Routes, Route} from 'react-router-dom'
 import './App.css';
 import MapNavigationRoutes from "./components/MapNavigationRoutes";
 
 const App = () => {
   return (
-    <div>
-      <MapNavigationRoutes />
-    </div>
+    <>
+      <Header/>
+      <Routes>
+        <Route path="/" element={<MapNavigation/>}/>
+        <Route path="/Trazado" element={<MapNavigationRoutes/>}/>
+      </Routes>
+    </>
   )
 }
 

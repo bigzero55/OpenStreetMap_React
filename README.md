@@ -31,7 +31,12 @@ Es un mapa editable y libre del mundo entero que está siendo elaborado por volu
 
 ![](https://react-leaflet.js.org/img/logo-title.svg)
 
-En nuestro caso utilizamos react-leaflet, ya que es una librería  existente para react, donde provee a React con componentes para Leaflet. 
+En nuestro caso utilizamos react-leaflet, ya que es una librería  existente para react, donde provee a React con componentes para Leaflet.
+
+Dicha librería trabaja con las siguientes versiones:
+
+- "leaflet": "^1.9.3"
+- "react": "^18.2.0"
 
 ####Intalación 
 
@@ -79,7 +84,7 @@ Despues de la instalación agregamos el siguiente código que nos muestra un fun
 
 # Nominatim 
 
-Es una herrmaienta que nos da la posibilidad de buscar datos de OpenStreetMap por nombre y dirección (geocodificación).
+Es una herramienta que nos da la posibilidad de buscar datos de OpenStreetMap por nombre y dirección (geocodificación).
 
 # Trazado de rutas
 
@@ -148,6 +153,28 @@ Al agregar correctamente lo anteriormente mostrado el trazado de la ruta debe te
 
 ![](https://i.stack.imgur.com/iec9g.jpg)
 
+# React Router
+
+![](https://blog.karenying.com/static/b17f2b049068979741a79588250ad8cb/nav-bar-with-dot.png)
+
+React Router es una librería de para React que facilita la navegación entre páginas para aplicaciones de una sola página.
+
+## Instalación
+
+Se instalará mediante npm con el siguiente comando.
+
+`
+npm install react-router-dom
+`
+Y por ultimo importantando dentro de tu proyecto: 
+
+```
+import {BrowserRouter} from 'react-router-dom' //Componente para gestionar la navegación de la aplicación.
+import {Routes, Route} from 'react-router-dom' //Definición de las rutas.
+import {Link} from 'react-router-dom' //Se utiliza para crear enlaces para navegar en la aplicación.
+```
+
+
 # Referencias
 [React-leaflet](https://react-leaflet.js.org/) :fa-leaf:
 
@@ -156,3 +183,5 @@ Al agregar correctamente lo anteriormente mostrado el trazado de la ruta debe te
 [Wiki de Openstreetmap](https://wiki.openstreetmap.org/) :fa-globe:
 
 [Leaflet Routing Machine](https://www.liedman.net/leaflet-routing-machine/#about)
+
+[React Router](https://reactrouter.com/en/main)

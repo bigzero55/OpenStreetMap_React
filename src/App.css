@@ -14,5 +14,30 @@
 
 .map-container {
   height: 80%; 
-  width: 80%; 
+  width: 80%;
+}
+
+nav{
+  padding: 10px;
+  background-color: rgb(38, 121, 209);
+}
+
+ul{
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li{
+  padding: 5px;
+  background-color: rgb(70, 147, 235);
+  border-radius: 10px;
+}
+a{
+  text-decoration: none;
+  font-size: larger;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
