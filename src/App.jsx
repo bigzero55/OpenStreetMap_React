@@ -10,11 +10,10 @@ const App = () => {
       <Header/>
       <Routes>
         <Route path="/" element={<MapNavigation/>}/>
-        <Route path="/Trazado" element={<MapNavigationRoutes/>}/>
+        <Route path="/navigasi" element={<MapNavigationRoutes/>}/>
       </Routes>
     </>
   )
 }
 
 export default App
-
