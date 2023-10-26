@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "map-ojak",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

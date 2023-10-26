@@ -23,7 +23,7 @@ function LocationMarker() {
 }
 
 const MapNavigation = () => {
-  const PositionPuebla = [-6.968326823991348, 107.62729336882325]; // Garis lintang dan bujur Negara Bagian Puebla
+  const PositionMengger = [-6.968326823991348, 107.62729336882325]; // Garis lintang dan bujur Negara Bagian Mengger
 
   const markers = [
     { position: [-6.967708914879933, 107.62773543893485], name: "Real Kost" },
@@ -47,7 +47,7 @@ const MapNavigation = () => {
   return (
     <div className=".map-container">
       <MapContainer
-        center={PositionPuebla}
+        center={PositionMengger}
         zoom={16}
         style={{ height: "92vh", width: "100%" }}
       >
@@ -55,13 +55,11 @@ const MapNavigation = () => {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> kontributor'
         />
-        {/* {markers.map((marker, index) => (
+        {markers.map((marker, index) => (
           <Marker key={index} position={marker.position}>
             <Popup>{marker.name}</Popup>
           </Marker>
-        ))} */}
-
-        <LocationMarker />
+        ))}
       </MapContainer>
     </div>
   );

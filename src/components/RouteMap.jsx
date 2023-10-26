@@ -11,17 +11,21 @@ const RouteMap = () => {
   const map = useMap(); // Dapatkan objek peta saat ini menggunakan useMap dari react-leaflet.
 
   const markers = [
+    { position: [-6.967708914879933, 107.62773543893485], name: "Real Kost" },
+    { position: [-6.989317046674414, 107.55729916782114], name: "Klinik Bina Sehat"},
     {
-      position: [19.058569415530922, -98.15194017609723],
-      name: "Universitas Teknologi Puebla",
+      position: [-6.968649211031864, 107.62717608491147],
+      name: "Pondok Izzati",
     },
-    { position: [19.0428904, -98.200904], name: "Katedral Kota Puebla" },
-    { position: [19.0966071, -98.2441535], name: "Taman Frailes" },
-    { position: [19.05108, -98.17518], name: "Ku Fort Loreto" },
     {
-      position: [19.044151597930146, -98.19182940917058],
-      name: "Barrio del Artista",
+      position: [-6.968550703904539, 107.62852936076335],
+      name: "OYO Socialite",
     },
+    {
+      position: [-6.968613390259261, 107.6263641193572],
+      name: "warung pak agus",
+    },
+    { position: [-6.9672253332680665, 107.62705880096115], name: "Gelewo" },
   ];
 
   useEffect(() => {
@@ -31,7 +35,7 @@ const RouteMap = () => {
     const routingControl = L.Routing.control({
       waypoints: [L.latLng(markers[0].position), L.latLng(markers[1].position)],
       routeWhileDragging: true, // Izinkan pembaruan rute saat digeser.
-      language: "es", // Setel bahasa rute ke bahasa Spanyol.
+      language: "en", // Setel bahasa rute ke bahasa Spanyol.
       lineOptions: {
         styles: [
           { color: "red", opacity: 0.8, weight: 4 }, // Tetapkan gaya garis rute.
